@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="月光老宅喫茶店封面插圖：月亮、復古吊燈與哈密瓜蘇打">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a3328"/>
+      <stop offset="1" stop-color="#2f2019"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f8ecc9" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#f8ecc9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#night)"/>
+  <!-- 窗框與月亮 -->
+  <rect x="160" y="130" width="420" height="520" rx="26" fill="#3a281f" stroke="#7a5a3f" stroke-width="14"/>
+  <line x1="370" y1="130" x2="370" y2="650" stroke="#7a5a3f" stroke-width="10"/>
+  <line x1="160" y1="390" x2="580" y2="390" stroke="#7a5a3f" stroke-width="10"/>
+  <circle cx="470" cy="260" r="62" fill="#f8ecc9"/>
+  <circle cx="494" cy="244" r="54" fill="#3a281f"/>
+  <circle cx="250" cy="220" r="4" fill="#f8ecc9"/><circle cx="300" cy="300" r="3" fill="#f8ecc9"/><circle cx="260" cy="520" r="3" fill="#f8ecc9"/>
+  <!-- 復古吊燈 -->
+  <line x1="1000" y1="0" x2="1000" y2="190" stroke="#c9a56b" stroke-width="6"/>
+  <circle cx="1000" cy="330" r="230" fill="url(#glow)"/>
+  <path d="M900 300 Q900 190 1000 190 Q1100 190 1100 300 Z" fill="#d9a441"/>
+  <ellipse cx="1000" cy="300" rx="100" ry="14" fill="#f8ecc9"/>
+  <!-- 桌面 -->
+  <rect x="0" y="760" width="1600" height="240" fill="#5a3d2b"/>
+  <rect x="0" y="750" width="1600" height="16" fill="#7a5a3f"/>
+  <!-- 哈密瓜蘇打 -->
+  <g transform="translate(800 480)">
+    <path d="M0 0 L190 0 L172 270 Q170 285 155 285 L35 285 Q20 285 18 270 Z" fill="#cfe5c3" opacity=".9" stroke="#fffdf8" stroke-width="6"/>
+    <path d="M12 70 L178 70 L172 270 Q170 285 155 285 L35 285 Q20 285 18 270 Z" fill="#a9d29a" opacity=".85"/>
+    <circle cx="95" cy="40" r="52" fill="#fffdf8"/>
+    <circle cx="70" cy="30" r="6" fill="#fff" opacity=".7"/>
+    <circle cx="60" cy="160" r="8" fill="#fffdf8" opacity=".6"/><circle cx="120" cy="200" r="6" fill="#fffdf8" opacity=".6"/><circle cx="90" cy="120" r="5" fill="#fffdf8" opacity=".6"/>
+    <circle cx="125" cy="-10" r="20" fill="#c0392b"/>
+    <path d="M120 -26 Q132 -44 150 -38" fill="none" stroke="#5f6f4e" stroke-width="6" stroke-linecap="round"/>
+    <path d="M130 100 L170 -60" stroke="#e8a0a0" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <!-- 千層蛋糕 -->
+  <g transform="translate(1150 610)">
+    <path d="M0 80 L220 80 L220 150 L0 150 Z" fill="#fffdf8"/>
+    <rect x="0" y="100" width="220" height="10" fill="#f4dcd6"/><rect x="0" y="125" width="220" height="10" fill="#f4dcd6"/>
+    <path d="M0 80 L110 20 L220 80 Z" fill="#fffdf8"/>
+    <circle cx="70" cy="62" r="18" fill="#c0392b"/><circle cx="115" cy="48" r="18" fill="#c0392b"/><circle cx="160" cy="66" r="18" fill="#c0392b"/>
+  </g>
+  <!-- 貓咪剪影 -->
+  <g transform="translate(270 700)" fill="#1f1511">
+    <ellipse cx="110" cy="70" rx="95" ry="62"/>
+    <circle cx="190" cy="20" r="42"/>
+    <path d="M160 -14 L170 -52 L192 -22 Z"/><path d="M200 -22 L222 -50 L228 -6 Z"/>
+    <path d="M18 80 Q-50 70 -30 10" fill="none" stroke="#1f1511" stroke-width="20" stroke-linecap="round"/>
+  </g>
+</svg>
