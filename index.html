@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>店家地圖庫｜精選咖啡廳・美食・私房景點</title>
+  <meta name="description" content="記錄並分類精選的特色咖啡廳、美食與私房景點，依地區與風格快速探索。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- 固定導覽列 -->
+  <header class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">☕ 店家地圖庫</a>
+      <nav class="nav-links">
+        <a class="active" href="index.html">總首頁</a>
+        <a href="#regions">地區</a>
+        <a href="#styles">風格</a>
+        <a href="#stores">所有店家</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">STORE MAP LIBRARY</span>
+        <h1>慢慢逛，找到心動的那一家</h1>
+        <p>收錄精選的特色咖啡廳、美食與私房景點，依照地區與風格，快速找到適合今天的去處。</p>
+      </div>
+    </section>
+
+    <!-- 地區與風格篩選 -->
+    <section class="section" id="regions">
+      <div class="container">
+        <div class="section-head"><h2>地區與風格</h2></div>
+        <div class="filters" id="styles">
+          <div class="filter-row" data-filter="region">
+            <span class="filter-label">地區</span>
+            <button class="chip active" data-value="all">全部</button>
+            <button class="chip" data-value="台北">台北</button>
+            <button class="chip" data-value="新北">新北</button>
+            <button class="chip" data-value="台中">台中</button>
+            <button class="chip" data-value="南投">南投</button>
+          </div>
+          <div class="filter-row" data-filter="tag">
+            <span class="filter-label">風格</span>
+            <button class="chip active" data-value="all">全部</button>
+            <button class="chip" data-value="有插座">#有插座</button>
+            <button class="chip" data-value="不限時">#不限時</button>
+            <button class="chip" data-value="靜謐老宅">#靜謐老宅</button>
+            <button class="chip" data-value="貓咪互動">#貓咪互動</button>
+            <button class="chip" data-value="手沖單品">#手沖單品</button>
+            <button class="chip" data-value="極簡靜謐">#極簡靜謐</button>
+            <button class="chip" data-value="昭和復古">#昭和復古</button>
+            <button class="chip" data-value="深夜咖啡">#深夜咖啡</button>
+            <button class="chip" data-value="貓咪駐店">#貓咪駐店</button>
+            <button class="chip" data-value="手作甜點">#手作甜點</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 店家總覽 -->
+    <section class="section" id="stores">
+      <div class="container">
+        <div class="section-head">
+          <h2>店家總覽</h2>
+          <span class="count" id="store-count"></span>
+        </div>
+
+        <div class="card-grid" id="card-grid">
+          <!-- ▼ 新增店家時，AI 依 AGENTS.md SOP 將新卡片插入在此註解下方（清單頂部） ▼
+          範例格式：
+          <a class="card" href="pages/taipei-daan-cafe-01.html" data-region="台北" data-tags="有插座,不限時">
+            <img class="card-cover" src="assets/images/taipei-daan-cafe-01.jpg" alt="店名" loading="lazy">
+            <div class="card-body">
+              <h3>店名</h3>
+              <div class="card-meta">📍 台北・大安區</div>
+              <p>一句話簡介。</p>
+              <div class="tags"><span class="tag">#有插座</span><span class="tag">#不限時</span></div>
+              <span class="card-link">查看詳細介紹 →</span>
+            </div>
+          </a>
+          ▲ -->
+
+          <a class="card" href="pages/zhongshan-vintage-cafe-02.html" data-region="台北" data-tags="昭和復古,深夜咖啡,貓咪駐店,手作甜點">
+            <img class="card-cover" src="assets/images/zhongshan-vintage-cafe-02.svg" alt="月光老宅喫茶店封面插圖" loading="lazy">
+            <div class="card-body">
+              <h3>月光老宅喫茶店</h3>
+              <div class="card-meta">📍 台北・中山區（赤峰街）</div>
+              <p>藏在老宅二樓的昭和風喫茶店，木質老傢俱與復古燈飾，兩隻店貓陪你度過夜晚。</p>
+              <div class="tags"><span class="tag">#昭和復古</span><span class="tag">#深夜咖啡</span><span class="tag">#貓咪駐店</span><span class="tag">#手作甜點</span></div>
+              <span class="card-link">查看詳細介紹 →</span>
+            </div>
+          </a>
+
+          <a class="card" href="pages/taipei-daan-cafe-01.html" data-region="台北" data-tags="有插座,不限時,手沖單品,極簡靜謐">
+            <img class="card-cover" src="assets/images/taipei-daan-cafe-01.svg" alt="簡光 Roaster Coffee 封面插圖" loading="lazy">
+            <div class="card-body">
+              <h3>簡光 Roaster Coffee</h3>
+              <div class="card-meta">📍 台北・大安區</div>
+              <p>隱身大安區靜謐巷弄的極簡手沖咖啡館，採光極佳、木質調設計，插座與網路充足，適合閱讀或專心工作。</p>
+              <div class="tags"><span class="tag">#有插座</span><span class="tag">#不限時</span><span class="tag">#手沖單品</span><span class="tag">#極簡靜謐</span></div>
+              <span class="card-link">查看詳細介紹 →</span>
+            </div>
+          </a>
+
+          <div class="empty" id="empty-state">
+            <strong>還沒有收錄任何店家</strong>
+            對我說「新增店家」，第一張卡片就會出現在這裡。
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 店家地圖庫・以喜歡的步調，慢慢收藏好店</div>
+  </footer>
+
+  <script>
+    // 依地區與風格篩選店家卡片（對之後新增的卡片自動生效）
+    (function () {
+      var grid = document.getElementById('card-grid');
+      var empty = document.getElementById('empty-state');
+      var count = document.getElementById('store-count');
+      var state = { region: 'all', tag: 'all' };
+
+      function apply() {
+        var cards = grid.querySelectorAll('.card:not(.empty)');
+        var shown = 0;
+        cards.forEach(function (c) {
+          var tags = (c.dataset.tags || '').split(',');
+          var ok = (state.region === 'all' || c.dataset.region === state.region) &&
+                   (state.tag === 'all' || tags.indexOf(state.tag) !== -1);
+          c.hidden = !ok;
+          if (ok) shown++;
+        });
+        empty.hidden = cards.length > 0 && shown > 0;
+        if (cards.length > 0 && shown === 0) {
+          empty.querySelector('strong').textContent = '沒有符合條件的店家';
+          empty.lastChild.textContent = '換個地區或風格試試看。';
+        }
+        count.textContent = cards.length ? '共 ' + shown + ' 家' : '';
+      }
+
+      document.querySelectorAll('.filter-row').forEach(function (row) {
+        row.addEventListener('click', function (e) {
+          var btn = e.target.closest('.chip');
+          if (!btn) return;
+          row.querySelectorAll('.chip').forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          state[row.dataset.filter] = btn.dataset.value;
+          apply();
+        });
+      });
+      apply();
+    })();
+  </script>
+</body>
+</html>
